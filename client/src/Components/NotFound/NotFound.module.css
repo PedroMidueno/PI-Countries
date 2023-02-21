@@ -1,0 +1,47 @@
+.divNotFound{
+    /* border: 1px solid black; */
+    margin-top: 127.5px;
+    font-family: 'Itim';
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.divTarjeta{
+    /* border: 1px solid red; */
+    height: 183.5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    padding-right: 15px;
+    background: #001D3D;
+    border: 1px solid #001D3D;
+    border-radius: 20px;
+    box-shadow: 2px 5px 10px #000;
+    color: #fff;
+}
+
+.divTarjeta div{
+    /* border: 1px solid black; */
+    width: 180px;
+}
+
+.divTarjeta div img{
+    /* border: 1px solid black; */
+    width: 100%;
+}
+
+.divTarjeta h1{
+    /* border: 1px solid black; */
+    font-size: 60px;
+    text-shadow: 10px 5px 10px #000;
+}
+
+.divMensaje{
+    /* border: 1px solid black; */
+    margin-top: 20px;
+    margin-bottom: 140px;
+}

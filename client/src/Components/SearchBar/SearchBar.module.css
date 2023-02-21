@@ -1,0 +1,82 @@
+.divSearch {
+    /* border: 1px solid white; */
+    font-family: 'Itim';
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 60px;
+}
+
+.divSearch label {
+    color: #d7d9ce;
+    font-size: 20px;
+}
+
+.botonBuscar {
+    width: 100px;
+    font-family: 'Itim';
+    margin-left: 5px;
+    height: 25px;
+    background: #d7d9ce;
+    border: 2px solid #d7d9ce;
+    border-radius: 5px;
+    transition: all .1s ease;
+    color: #040404;
+}
+
+.botonBuscar:hover {
+    background: #040404;
+    color: #d7d9ce;
+}
+
+.normalText {
+    width: 250px;
+    height: 25px;
+    margin-left: 5px;
+    border: 1px solid #040404;
+    border-radius: 5px;
+}
+
+.normalText:focus {
+    outline: 1.5px solid #d7d9ce;
+}
+
+.errorText {    
+    width: 250px;
+    height: 25px;
+    margin-left: 5px;
+    border: 1px solid red;
+    border-radius: 5px;
+}
+
+.errorText:focus {
+    outline: 1.5px solid #d7d9ce;
+}
+
+.noVisible {
+    visibility: hidden;
+    width: 25px;
+    height: 25px;
+    font-family: 'Itim';
+    color: #040404;
+    background: #c81d25;
+    border: 2px solid #c81d25;
+    border-radius: 5px;
+}
+
+.visible {
+    visibility: visible;
+    width: 25px;
+    height: 25px;
+    font-family: 'Itim';
+    color: #040404;
+    background: #c81d25;
+    border: 2px solid #c81d25;
+    border-radius: 5px;
+    transition: all .1s ease;
+}
+
+.visible:hover{
+    background: #d7263d;
+    border: 2px solid #d7263d;
+}

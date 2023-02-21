@@ -1,0 +1,128 @@
+.divGral{
+    /* border: 1px solid red; */
+    font-family: 'Itim';
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    padding: 20px;
+    background: #001D3D;
+    border: 1px solid #001D3D;
+    color: #fff;
+    text-shadow: 2px 5px 10px #000;
+    border-radius: 20px;
+    box-shadow: 4px 10px 20px #000;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.divHeader{
+    /* border: 1px solid green; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 0;
+}
+
+.divLogo{
+    /* border: 1px solid gold; */
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.divLogo img{
+    width: 100%;
+}
+
+.divTitulo{
+    /* border: 1px solid violet; */
+    margin-right: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+.divContent{
+    /* border: 1px solid blue; */
+    display: flex;
+    flex-direction: column;
+}
+
+.divContent p{
+    /* border: 1px solid hotpink; */
+    margin: 5px auto;
+    padding: 0 20px;
+    font-size: 23px;
+    line-height: 35px;
+}
+
+.divTech{
+    /* border: 1px solid green; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 20px;
+}
+
+.divFront, .divBack{
+    /* border: 1px solid red; */
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.divFront ul, .divBack ul {
+    text-align: left;
+}
+
+.divFront h3, .divBack h3{
+    margin: 0 auto;
+}
+
+.divRedes{
+    /* border: 1px solid blueviolet; */
+    display: flex;
+    flex-direction: column;
+}
+
+.divRedes h1{
+    /* border: 1px solid black; */
+    margin: 10px auto;
+}
+
+.divRedesImg{
+    /* border: 1px solid blue; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.divGit, .divLinkedIn{
+    /* border: 1px solid green; */
+    width: 200px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.divGit{
+    background: #000;
+}
+
+.divGit a, .divLinkedIn a{
+    /* border: 1px solid black; */
+    border-radius: 30px;
+
+}
+
+.divGit a img, .divLinkedIn a img{
+    width: 100%;
+    box-shadow: 4px 10px 20px #000;
+}

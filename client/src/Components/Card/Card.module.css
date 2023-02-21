@@ -1,0 +1,89 @@
+a {
+    text-decoration: none;
+}
+
+.divCard {
+    /* border: 1px solid white; */
+    width: 200px;
+    padding: 10px;
+    margin: 15px 10px;
+    /* margin-left: 10px; 
+    margin-bottom: 10px;  */
+    font-size: 100px;
+    color: #fff;
+    font-family: 'Itim';
+    background: #001D3D;
+    border: 1px solid #001D3D;
+    border-radius: 20px;
+    box-shadow: 2px 5px 10px #000;
+    transition: all .1s ease;
+}
+
+.divCard:hover {
+    font-size: 101px;
+    width: 202px;
+    cursor: pointer;
+}
+
+.divFlag {
+    /* border: 1px solid white; */
+    width: 95%;
+    margin: 0 auto;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.divFlag img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 2px 5px 10px #000;
+}
+
+.divName {
+    /* border: 1px solid white; */
+    font-size: .10em;
+    width: 95%;
+    margin: 0 auto;
+    padding: 0;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.divName h2 {
+    margin: 0;
+    text-shadow: 2px 5px 10px #000;
+}
+
+.divId {
+    /* border: 1px solid white; */
+    font-size: .10em;
+    width: 95%;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.divId h2 {
+    margin: 0;
+    text-shadow: 2px 5px 10px #000;
+}
+
+.divContinent {
+    /* border: 1px solid white; */
+    font-size: .10em;
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.divContinent h2 {
+    text-shadow: 2px 5px 10px #000;
+}
