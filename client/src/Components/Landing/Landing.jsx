@@ -9,9 +9,7 @@ export default function Landing(props) {
             .then(response => response.data)
             .then(data => console.log(data))
             .catch(error => console.log(error.message))
-    }, [])
-
-    
+    }, [])    
 
     function presionar_enter(event) {
         let tecla = event.keyCode
@@ -26,7 +24,7 @@ export default function Landing(props) {
     return (
         <div className={styles.divLanding}>
             {/* Slider con Banderas del 1 al 10*/}
-            <div className={styles.slider}>
+            <div className={`${styles.slider} ${styles.first_slider}`}>
                 <div className={styles.slideTrack}>
                     <div className={styles.slide}>
                        <img src="animationImgs/1.png" alt="Bandera 1" /> 
@@ -109,7 +107,7 @@ export default function Landing(props) {
             </div>
 
             {/* Slider con Banderas del 11 al 20*/}
-            <div className={styles.slider}>
+            <div className={`${styles.slider} ${styles.second_slider}`}>
                 <div className={styles.slideTrack}>
                     <div className={styles.slide}>
                        <img src="animationImgs/11.png" alt="Bandera 11" /> 
@@ -174,7 +172,7 @@ export default function Landing(props) {
                     </div>
                 </div>
             </div>
-            {/* Aquí termina el tercer slider*/}
+            {/* Aquí termina el segundo slider*/}
         </div>
     )
 }

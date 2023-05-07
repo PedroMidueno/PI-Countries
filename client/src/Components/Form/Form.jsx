@@ -235,7 +235,7 @@ export default function Form(props) {
                                     >{elem.name}</div>
                                 )
                             }) :
-                            <div className={styles.divNoCountries}>Debe agregar <br /> al menos un pais..</div>
+                            <div className={styles.divNoCountries}>Debe agregar <br /> al menos un pais...</div>
                         }
                     </div>
                 </div>

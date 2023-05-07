@@ -48,7 +48,7 @@ export default function About(props) {
                     </div>
                 </div>
                 <p>
-                    Ademas del uso de GIT para llevar un buen registro de los cambios realizados en el código de la aplicación
+                    Ademas del uso de GIT y GitHub para llevar un buen registro de los cambios realizados en el código de la aplicación
                     y que servirá de base para futuras mejoras que pueda recibir esta aplicación y para poder controlar el versionado
                     de la misma.
                 </p>

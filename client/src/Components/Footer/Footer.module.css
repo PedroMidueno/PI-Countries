@@ -2,6 +2,7 @@
     background: #040404;
     /* border: 1px solid red; */
     width: 100%;
+    padding: 3px;
     margin-bottom: 0;
     display: flex;
     flex-direction: row;
@@ -28,8 +29,14 @@
 .divAutor{
     /* border: 1px solid white; */
     color: #d7d9ce;
-    height: 60px;
     margin-left: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.divAutor h4{
+    margin: 0;
 }
 
 .divRedes{
@@ -44,8 +51,41 @@
 
 .divRedes img{
     width: 35px;
-    
-    /* margin: 0 30px; */
+}
+
+@media screen and (max-width: 800px){
+   .divHenry{
+    width: 25px;
+   } 
+
+   .divHenry a img{
+    width: 25px;
+   }
+
+   .divAutor{
+    height: auto;
+    font-size: 12px
+   }
+
+   .divRedes img{
+    width: 25px;
+   }
+}
+
+@media screen and (max-width: 480px){
+    .divAutor{
+        height: auto;
+        font-size: 10px
+       } 
+
+       .divRedes{
+        gap: 10px;
+        margin-right: 10px;
+       }
+
+       .divHenry{
+        margin-left: 10px;
+       }
 }
 
 

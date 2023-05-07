@@ -1,6 +1,7 @@
 .divLanding {
-    /* border: 1px solid black; */
+    /* border: 1px solid red; */
     width:100%;
+    min-height: 100vh;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -14,7 +15,7 @@
     /* border: 1px solid black; */
     width: 48%;
     margin: 50px auto;
-    padding-top: 10px;
+    padding: 10px 10px;
     background: #001D3D;
     border: 1px solid #001D3D;
     border-radius: 20px;
@@ -69,6 +70,7 @@
 
 .slider{
     width: 100%;
+    max-width: 1400px;
     height: auto;
     /* margin: auto; */
     overflow: hidden;
@@ -92,6 +94,22 @@
     width: 100%;
 }
 
+.first_slider{
+    /* border: 1px solid green; */
+    position: absolute;
+    margin-top: 5px;
+    top: 0;
+    bottom: unset;
+}
+
+.second_slider{
+    /* border: 1px solid green; */
+    position: absolute;
+    margin-bottom: 5px;
+    top: unset;
+    bottom: 0;
+}
+
 @keyframes scrollLeft {
     0%{
         -webkit-transform: translateX(0);
@@ -101,6 +119,77 @@
     100%{
         -webkit-transform: translateX(calc(-135px * 10));
         transform: translateX(calc(-135px * 10));
+    }
+}
+
+@media screen and (max-width: 1294px){
+    .divLogo{
+        width: 55%;
+    }
+
+    .divLogo h1{
+        font-size: 45px;
+    }
+
+    .divLogo div{
+        margin-right: -40px;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .divLogo{
+        width: 60vw;
+        margin-bottom: 30px;
+        flex-direction: column;
+    }
+
+    .divLogo h1{
+        font-size: 50px;
+    }
+
+    .divLogo div{
+        width: 70%;
+        margin-right: unset;
+    }
+
+    .slideTrack{
+        width: calc(115px * 20);
+    }
+    
+    .slide{
+        width: 115px;
+        /* margin-right: 10px; */
+        padding: 5px;
+    }
+
+
+    @keyframes scrollLeft {
+        0%{
+            -webkit-transform: translateX(0);
+            transform: translateX(0);
+        }    
+    
+        100%{
+            -webkit-transform: translateX(calc(-115px * 10));
+            transform: translateX(calc(-115px * 10));
+        }
+    }
+}
+
+@media screen and (max-width: 480px){
+    .divLogo {
+        width: 90%;
+        margin: 30px auto;
+        padding:10px 3px;
+        flex-wrap: wrap;
+    }
+
+    .divLogo h1{
+        font-size: 40px;
+    }
+
+    .divLogo div{
+        width: 80%;
     }
 }
 

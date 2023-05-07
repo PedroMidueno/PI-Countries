@@ -147,7 +147,7 @@ export default function Cards(props) {
     }
     //-----------------------------------------------------------------------------------------------------------------------
     const handlePrev = () => {
-        if (end === countries.length) {
+        if (end === countries.length && end % 10 !== 0) {
             navigate(`?inicio=${start - LIMIT}&fin=${end - end % LIMIT}`)
             return;
         }
