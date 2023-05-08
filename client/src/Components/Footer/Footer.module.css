@@ -1,6 +1,7 @@
 .divFooter{
     background: #040404;
     /* border: 1px solid red; */
+    max-width: 1400px;
     width: 100%;
     padding: 3px;
     margin-bottom: 0;
@@ -9,6 +10,9 @@
     justify-content: space-between;
     align-items: center;
     font-family: 'Itim';
+    bottom: 100%;
+    top: unset;
+    box-sizing: border-box;
 }
 
 .divHenry{
@@ -46,7 +50,7 @@
     justify-content: center;
     align-items: center;
     gap: 30px;
-    margin-right: 30px;
+    margin-right: 25px;
 }
 
 .divRedes img{

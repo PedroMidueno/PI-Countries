@@ -6,8 +6,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
   background: #f8f9fa;
-  /* border: 1px solid black; */
+  
 }
 
 code {
@@ -15,3 +16,15 @@ code {
     monospace;
 }
 
+@media screen and (min-height: 1002px){
+  body{
+    background: #46494c;
+  }
+}
+
+
+@media screen and (min-width: 1401px){
+  body{
+    background: #46494c;
+  }
+}

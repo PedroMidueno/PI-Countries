@@ -1,7 +1,21 @@
 .App {
-  border: 1px solid red;
+  /* border: 1px solid green; */
   text-align: center;
   max-width: 1400px;
-  min-height: 100vh;
+  max-height: 1080px;
   margin: 0 auto;
+  background: #f8f9fa;
+}
+
+@media screen and (min-height: 1002px){
+  .App{
+    border: 1px solid #46494c;
+  }
+}
+
+
+@media screen and (min-width: 1401px){
+  .App{
+    border: 1px solid #46494c;
+  }
 }

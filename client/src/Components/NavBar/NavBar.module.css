@@ -2,6 +2,7 @@
     /* border: 1px solid white; */
     background: #040404;
     width: 100%;
+    max-width: 1400px;
     margin: 0 auto;
     top: 0;
     padding: 5px;
@@ -10,7 +11,7 @@
     flex-direction: row;
     justify-content: space-between;
     font-family:'Itim';
-    
+    box-sizing: border-box;
 }
 
 .divLinks{
