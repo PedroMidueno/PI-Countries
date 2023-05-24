@@ -1,3 +1,7 @@
+html{
+  height: 100%;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -8,12 +12,19 @@ body {
   -moz-osx-font-smoothing: grayscale;
   
   background: #f8f9fa;
+
+  height: 100%;
   
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+#root{
+  /* border: 1px solid red; */
+  min-height: 100%;
 }
 
 @media screen and (min-height: 1002px){

@@ -4,14 +4,11 @@
     max-width: 1400px;
     width: 100%;
     padding: 3px;
-    margin-bottom: 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     font-family: 'Itim';
-    bottom: 100%;
-    top: unset;
     box-sizing: border-box;
 }
 

@@ -2,9 +2,10 @@
   /* border: 1px solid green; */
   text-align: center;
   max-width: 1400px;
-  max-height: 1080px;
   margin: 0 auto;
   background: #f8f9fa;
+  min-height: 100%;
+
 }
 
 @media screen and (min-height: 1002px){
