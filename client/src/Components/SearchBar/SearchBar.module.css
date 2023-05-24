@@ -41,7 +41,7 @@
     outline: 1.5px solid #d7d9ce;
 }
 
-.errorText {    
+.errorText {
     width: 250px;
     height: 25px;
     margin-left: 5px;
@@ -76,7 +76,58 @@
     transition: all .1s ease;
 }
 
-.visible:hover{
+.visible:hover {
     background: #d7263d;
     border: 2px solid #d7263d;
+}
+
+.botonBuscarMini {
+    margin-left: 5px;
+    height: 25px;
+    background: #d7d9ce;
+    border: 2px solid #d7d9ce;
+    border-radius: 5px;
+    transition: all .1s ease;
+    color: #040404;
+    display: none;
+}
+
+.botonBuscarMini:hover {
+    background: #040404;
+    color: #d7d9ce;
+}
+
+@media screen and (max-width: 1062px) {
+    .normalText {
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 937px) {
+    .normalText {
+        width: 150px;
+    }
+
+    .botonBuscar {
+        display: none;
+    }
+
+    .botonBuscarMini {
+        display: inline-block;
+    }
+
+    .divSearch label {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .normalText {
+        width: 100px;
+        border: 1px solid white;
+    }
+
+    .divSearch label {
+        font-size: 12px;
+    }
 }

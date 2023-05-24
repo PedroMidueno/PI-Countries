@@ -3,6 +3,8 @@ import styles from './SearchBar.module.css';
 import { getCountryByName, resetState, changeMessage } from "../../Redux/actions/actions";
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 
 export default function SearchBar(props) {
 
@@ -63,16 +65,6 @@ export default function SearchBar(props) {
         setShowButton(false)
     }
 
-    // function presionar_enter(event) {
-    //     let tecla = event.keyCode
-
-    //     if (tecla === 13) {
-    //         document.getElementById('boton').click()
-    //     }
-    // }
-
-    // // window.onkeydown = presionar_enter;
-
     return (
         <div className={styles.divSearch}>
             <div><label htmlFor="write">Buscar país por nombre:</label></div>
@@ -83,10 +75,14 @@ export default function SearchBar(props) {
                         setName('')
                     }}>X</button>
 
+
                 <input type="text" placeholder="Ingrese un nombre" id='write' onChange={handleInput}
                     className={styles.normalText} value={name} maxLength='45'/>
 
                 <button id='boton' onClick={findCountries} className={styles.botonBuscar}>Buscar</button>
+                <button id='boton' onClick={findCountries} className={styles.botonBuscarMini}>
+                    <FontAwesomeIcon icon={faMagnifyingGlass} />
+                </button>
             </div>
         </div>
     )
