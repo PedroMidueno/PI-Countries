@@ -11,7 +11,7 @@ import {
 } from '../../Redux/actions/actions';
 import { useLocation, useNavigate } from "react-router-dom";
 //-----------------------------------------------------------------------------------------------------------------------
-export default function Cards(props) {
+export default function Cards() {
     // Elementos para modificar el estado global de redux
     const dispatch = useDispatch();
     const { filteredCountries, message } = useSelector((state) => {
@@ -165,11 +165,19 @@ export default function Cards(props) {
     const prev = "< Anterior";
     const next = "Siguiente >";
 
+    const showFilters=()=>{
+        const filters = document.getElementById('divSelectors')
+
+        filters.classList.toggle(styles.visible)
+    }
+
     // console.log(order)
     return (
         <div className={styles.divGeneral}>
 
-            <div className={styles.divSelectors}>
+            <button className={styles.botonMostrarFiltros} onClick={showFilters}>Mostrar/ocultar filtros</button>
+
+            <div className={styles.divSelectors} id="divSelectors">
                 <div>
                     <h5>Filtrar por <br /> continente:</h5>
                     <select name="continent">
