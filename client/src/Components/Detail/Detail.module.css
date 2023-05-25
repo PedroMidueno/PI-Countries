@@ -43,20 +43,12 @@ hr{
     align-items: center;
 }
 
-/* .divNombre{
-    border: 1px solid white;
-} */
-
 .divNombre h1{
     /* border: 1px solid white; */
     margin: 10px auto;
     margin-bottom: 0;
     font-size: 45px;
 }
-
-/* .divCodigo{
-    border: 1px solid white;
-} */
 
 .divCodigo h2{
     /* border: 1px solid white; */
@@ -99,18 +91,10 @@ hr{
     justify-content: center;
 }
 
-/* .divCapital{
-    border: 1px solid white;
-} */
-
 .divCapital h1{
     /* border: 1px solid white; */
     margin: 10px auto;
 }
-
-/* .divSubregion{
-    border: 1px solid white;
-} */
 
 .divSubregion h1{
     /* border: 1px solid white; */
@@ -118,19 +102,11 @@ hr{
 
 }
 
-/* .divArea{
-    border: 1px solid white;
-} */
-
 .divArea h1{
     /* border: 1px solid white; */
     margin: 10px auto;
 
 }
-
-/* .divPoblacion{
-    border: 1px solid white;
-} */
 
 .divPoblacion h1{
     /* border: 1px solid white; */
@@ -152,10 +128,6 @@ hr{
     text-shadow: 2px 5px 10px #000;
 }
 
-/* .divActivities h1 {
-    border: 1px solid blue;
-} */
-
 .divActCards{
     /* border: 1px solid green; */
     width: 95%;
@@ -167,6 +139,51 @@ hr{
     gap: 20px;
 }
 
-/* .divNoActs{
-    border: 1px solid black;
-} */
+@media screen and (max-width: 1010px){
+   .divDetail{
+    width: 90%;
+   } 
+}
+
+@media screen and (max-width: 786px){
+    .divNombre h1{
+        font-size: 25px;
+    }
+
+    .divCodigo h2,
+    .divNoActs h2{
+        font-size: 18px;
+    }
+
+    .divCapital h1,
+    .divSubregion h1,
+    .divArea h1,
+    .divPoblacion h1,
+    .divActivities h1{
+        font-size: 20px;
+    }
+
+    
+}
+
+@media screen and (max-width: 580px){
+    .divBottom{
+        flex-direction: column
+    }
+
+    .divImg{
+        width: 70%;
+        margin: 0 auto;
+    }
+    .divInfo{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .divCapital,
+    .divSubregion,
+    .divArea,
+    .divPoblacion {
+        width: 100%;
+    }
+}
