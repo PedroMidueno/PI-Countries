@@ -13,7 +13,7 @@ import axios from 'axios';
 export const saveCountries = () => {
     return async function (dispatch) {
         try {
-            let response = await axios('http://localhost:3001/countries/countriesActs');
+            let response = await axios('countries/countriesActs');
             dispatch({
                 type: SAVE_ALL_COUNTRIES,
                 payload: response.data
@@ -27,7 +27,7 @@ export const saveCountries = () => {
 export const getCountryByName = (name) => {
     return async function (dispatch) {
         try {
-            let response = await axios(`http://localhost:3001/countries?name=${name}`)
+            let response = await axios(`countries?name=${name}`)
             dispatch({
                 type: GET_COUNTRY_BY_NAME,
                 payload: response.data
@@ -41,7 +41,7 @@ export const getCountryByName = (name) => {
 export const postActivity = (activity) => {
     return async function (dispatch) {
         try {
-            let response = await axios.post('http://localhost:3001/activities', activity)
+            let response = await axios.post('activities', activity)
             dispatch({
                 type: POST_ACTIVITY,
                 payload: response.data

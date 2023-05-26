@@ -10,6 +10,9 @@ import NotFound from './Components/NotFound/NotFound';
 import About from './Components/About/About';
 import Footer from './Components/Footer/Footer';
 
+import axios from 'axios';
+axios.defaults.baseURL = 'http://localhost:3001/'
+
 function App() {
 
   const location = useLocation();
