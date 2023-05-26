@@ -45,3 +45,25 @@
     margin-top: 20px;
     margin-bottom: 140px;
 }
+
+@media screen and (max-width: 500px){
+    .divTarjeta{
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+        width: 60%;
+    }
+
+    .divTarjeta h1{
+        font-size: 30px;
+    }
+
+    .divTarjeta div{
+        /* border: 1px solid black; */
+        width: 150px;
+    }
+
+    .divMensaje h1{
+        font-size: 20px;
+    }
+}
