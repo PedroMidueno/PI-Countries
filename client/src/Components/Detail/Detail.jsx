@@ -11,7 +11,7 @@ export default function Detail(props) {
     const [country, setCountry] = useState({})
 
     useEffect(() => {
-        axios(`http://localhost:3001/countries/activities/${idPais}`)
+        axios(`countries/activities/${idPais}`)
             .then(response => response.data)
             .then((data) => {
                 if (data.length) {

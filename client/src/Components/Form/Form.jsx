@@ -17,7 +17,7 @@ export default function Form(props) {
     const regexNombre = /[`!@#$%^&*()_+\-=\[\]{};':"\\|<>\/?~]/;
 
     useEffect(() => {
-        axios('http://localhost:3001/countries')
+        axios('countries')
             .then(res => res.data)
             .then(data => {
                 setSearched([...data])
@@ -96,7 +96,7 @@ export default function Form(props) {
 
         if (name.length > 0) {
             try {
-                let res = await axios(`http://localhost:3001/countries?name=${name}`);
+                let res = await axios(`countries?name=${name}`);
                 let countries = res.data;
                 setSearched([...countries])
                 return;
@@ -106,7 +106,7 @@ export default function Form(props) {
             }
         } else {
             try {
-                let res = await axios('http://localhost:3001/countries')
+                let res = await axios('countries')
                 let countries = res.data;
                 setSearched([...countries])
                 return;
@@ -151,7 +151,7 @@ export default function Form(props) {
                 countriesCodes: [...codes]
             }
 
-            let res = await axios.post('http://localhost:3001/activities', info)
+            let res = await axios.post('activities', info)
             clear();
             load.classList.add(styles.invisible)
             setTimeout(() => {                

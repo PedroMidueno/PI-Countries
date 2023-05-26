@@ -5,7 +5,7 @@ import axios from 'axios';
 export default function Landing(props) { 
 
     useEffect(() => {
-        axios('http://localhost:3001/countries/save')
+        axios('countries/save')
             .then(response => response.data)
             .then(data => console.log(data))
             .catch(error => console.log(error.message))
