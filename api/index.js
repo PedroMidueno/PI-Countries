@@ -24,7 +24,7 @@ const { PORT } = process.env
 
 // Syncing all the models at once.
 conn.sync({ force: true }).then(() => {
-  server.listen(SERVER_PORT, () => {
+  server.listen(PORT, () => {
     console.log(`Server listening in port: http://localhost:${PORT}`); // eslint-disable-line no-console
   });
 });
