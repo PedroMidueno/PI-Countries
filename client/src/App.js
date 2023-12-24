@@ -12,7 +12,7 @@ import Footer from './Components/Footer/Footer';
 
 import axios from 'axios';
 // axios.defaults.baseURL = 'http://localhost:3001/'
-axios.defaults.baseURL = 'https://pi-countries-back-fgm4.onrender.com/'
+axios.defaults.baseURL = 'https://pi-countries-dev-mfrm.3.us-1.fl0.io/'
 
 function App() {
 
